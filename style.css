@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.custom-navbar {
+    background-color: #183b56;
+}
+
+.splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeOut 3s ease forwards 2s;
+}
+
+.paw {
+    font-size: 200px;
+    color: white;
+    opacity: 1;
+    animation: scaleAndBlur 2s ease forwards;
+}
+
+@keyframes scaleAndBlur {
+    0% {
+        transform: scale(1);
+        filter: blur(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.2);
+        filter: blur(5px);
+        opacity: 0.2;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.nav_name {
+    font-size: 17px;
+    text-align: center;
+    font-family: "Roboto";
+    color: white;
+}
+
+
+.custom-nav-link {
+    color: white !important;
+    font-family: "Roboto" !important;
+}
+
+.food-munch-logo {
+    height: 70px;
+    width: 80px;
+}
+
+.bg-container {
+    background-image: url("https://media-hosting.imagekit.io/5e583ebd929f40b8/IMG-20250419-WA0040.jpg?Expires=1839690794&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=MN9BfLpsFvhMa54Q-IF8EBYI4pA3GkDZGgCgq9Lzjl-m9sBtLqSlulRvCGKv4BGw1ZUEMi~yqBtnryIV61RYZSqW22R9YNAp1KG9dP8-Xtw--xHk1lVT4IL~Qf1mMkNOnzZwDVlMRZSGNFnQG9SJRKLz21zK3nLg8csAg4V4S0k0fC1DNl7COKFQO-5Q-WDFyRbpQgYSLiLWutZkvrYNscJ9i-qdlIx64mTWyVUHRdlIWq9iM571rYkTst2HD2I2buCK2DE6lMXMYnQPX-OaZ9gf5~CDebI58cI9D0mrYDLu8R03RFQ8XoM~c-O0BPMGaW9ShEq8vUMdA7AtfMvGOw__");
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.heading1 {
+    font-family: "sans-serif";
+    color: Black;
+    font-weight: bold;
+    font-size: 45px;
+
+}
+
+.description1 {
+    color: black;
+    font-family: "sans-serif";
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.custom-button {
+    font-family: "Roboto";
+    height: 45px;
+    width: 130px;
+    background-color: #d0b200;
+    color: white;
+    border-radius: 8px;
+    border-width: 0px;
+    margin-right: 10px;
+}
+
+.custom-outline-button {
+    font-family: "Roboto";
+    height: 45px;
+    width: 130px;
+    background-color: transparent;
+    color: #d0b200;
+    border-color: #d0b200;
+    border-radius: 8px;
+    border-style: solid;
+    margin-left: 10px;
+}
+
+.about-me-section {
+    background-color: #f9fbfe;
+}
+
+.abt-me-section-heading {
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+    color: #183b56;
+}
+
+.abt-me-section-description {
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #5a7184;
+}
+
+.dogs-card {
+    background-color: white;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #e5eaf4;
+    border-radius: 16px;
+}
+
+.dogs-card-image1 {
+    height: 120px;
+}
+
+.dogs-card-image2 {
+    height: 130px;
+}
+
+.dogs-card-image3 {
+    height: 75px;
+}
+
+.dogs-card-title {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 22px;
+    color: #323f4b;
+}
+
+.dogs-card-description {
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #7b8794;
+}
+
+.offers {
+    color: #323f4b;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.dogs-menu-section {
+    background-color: white;
+}
+
+.dogs-section-heading {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 28px;
+    color: #183b56;
+}
+
+.dogs-item-image {
+    border-radius: 17px;
+}
+
+.dogs-card-title {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 24px;
+}
+
+.dogs-item-link {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 14px;
+    color: #d0b200;
+}
+
+.dogs-item-card {
+    border-radius: 17px;
+
+}
+
+.res-sec {
+    background-color: #f9fbfe;
+}
+
+.rescue1-section {
+    background-color: #f9fbfe;
+}
+
+.rescue-section-img {
+    width: 200px;
+}
+
+.rescue-section-heading {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 28px;
+    color: #183b56;
+}
+
+.rescue-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.custom-button {
+    width: 130px;
+    height: 45px;
+    color: white;
+    background-color: #d0b200;
+    border-width: 0;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.rescue1-section-img {
+    height: auto;
+}
+
+.rescue1-section-heading {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 28px;
+    color: #183b56;
+}
+
+.rescue1-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 20px;
+}
+
+.payment-card-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 28px;
+}
+
+.thanking-customers-section {
+    background-color: #d0b2001a;
+}
+
+.thanking-customers-section-heading {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 28px;
+    color: #183b56;
+}
+
+.thanking-customers-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.thanking-customers-section-img {
+    width: 270px;
+    margin-bottom: 20px;
+}
+
+.follow-us-section {
+    background-color: white;
+}
+
+.follow-us-section-heading {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 28px;
+    color: #183b56;
+    text-align: center;
+}
+
+.footer-section {
+    background-color: #0d2436;
+}
+
+.footer-section-mail-id {
+    color: #959ead;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.footer-section-address {
+    color: #959ead;
+    font-family: "Roboto";
+    font-size: 14px;
+
+}
+
+.follow-us-icon-container {
+    background-color: #faf7e8;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 15px;
+    padding-top: 22px;
+    padding-bottom: 14px;
+    padding-right: 16px;
+    padding-left: 22px;
+}
+
+.icon {
+    color: #d0b200;
+    font-size: 35px;
+}
+
+.animal_name {
+    color: #0d2436;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.rescued-animals {
+    height: 200px;
+    border-radius: 20px;
+}
+
+.bg-container1 {
+    background-color: white;
+    background-size: cover;
+    height: 30vh;
+}
+
+.rescue-card-bg {
+    border-style: solid;
+    margin: 25px;
+    border-radius: 20px;
+    border-width: 2px;
+    background-color: black;
+    border-color: #e5eaf4;
+}
+
+.food-munch-logo {
+    height: 80px;
+}
